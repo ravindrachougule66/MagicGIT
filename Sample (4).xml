@@ -1,0 +1,1593 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="14071.00"/>
+    <APPLICATION val="Y"/>
+    <WithIsn val="N"/>
+    <WITH_MODELS val="N"/>
+    <MAIN_PRG_VARS val="0"/>
+    <MAIN_PRG_DSPS val="1"/>
+    <LNK END="0" START="0"/>
+  </Header>
+
+
+
+<RightsRepository>
+
+  <Rights/>
+
+</RightsRepository>
+<ComponentsRepository>
+
+  <Components>
+    <Component name="UserFunctionality">
+      <Description val="Handles the Range, Locate, Sort and Print Data internal events"/>
+      <ComponentType val="Magic xpa"/>
+      <Type val="U"/>
+      <LoadImmediate val="Y"/>
+      <LastISN val="1"/>
+      <Comment val="This component provides an interface for the user to perform Range, Locate, Sort and Print Data.The component does not expose any object. It has logic units for handling the Range, Locate, Sort and Print Data internal events.The source code for this component is available in the Add_On\UserFunctionality directory, so you can customize the screens of the component as you wish."/>
+      <CompId val="738976342-28670-18720-BFE77D42E"/>
+      <MciFile val="C:\Program Files (x86)\Magicxpa\Studio 4.7\Add_On\UserFunctionality\UserFunctionality.eci"/>
+      <CABINET_FILE val="%EngineDir%Add_On\UserFunctionality\UserFunctionality.ecf"/>
+      <ComponentEvents>
+        <Object>
+          <id val="12"/>
+          <ItemIsn val="1"/>
+          <PublicName val="RangeLocateSort"/>
+        </Object>
+      </ComponentEvents>
+    </Component>
+  </Components>
+
+</ComponentsRepository>
+<ModelsRepository>
+
+  <Models/>
+
+</ModelsRepository>
+<HelpRepository>
+
+  <HelpScreens/>
+
+</HelpRepository>
+ <DataSourceRepository>
+  <DataObjects>
+ 
+ </DataObjects>
+ </DataSourceRepository>
+ 
+
+<DataRepositoryProperties>
+
+
+</DataRepositoryProperties>
+
+
+<ProgramsRepository>
+<RepositoryProperties>
+</RepositoryProperties>
+<Programs>
+
+<Task MainProgram="Y">
+
+  <Header Description="メインプログラム">
+    <Resident val="N"/>
+    <SQL val="N"/>
+    <ReturnValue>
+      <ReturnValueAttr/>
+      <ParametersAttributes/>
+    </ReturnValue>
+    <SqlWhereExist val="N"/>
+    <TaskType val="B"/>
+    <External val="N"/>
+    <Offline val="N"/>
+    <Closeopentasks val="N"/>
+    <RunProjectAs val="O"/>
+    <FormType val="N"/>
+    <DotNetObjectExists val="N"/>
+    <LastModified _date="738292" _time="64644" date="2022/05/17" time="17:57:24"/>
+  </Header>
+
+  <Resource>
+    <Columns/>
+  </Resource>
+
+  <Information>
+    <Key>
+      <Mode val="N"/>
+    </Key>
+    <DB/>
+    <Sort>
+      <CLS val="A"/>
+    </Sort>
+    <ForceRecordDelete DEL="N"/>
+    <EndTaskCondition val="N"/>
+    <EvaluateEndCondition val="I"/>
+    <InitialMode val="E"/>
+    <Locate Direction="A"/>
+    <Range Direction="A"/>
+    <TaskProperties>
+      <SelectionTable val="N"/>
+      <ConfirmUpdate CNFU="N"/>
+      <ConfirmCancel val="N"/>
+      <ErrorStrategy val="R"/>
+      <LockingStrategy val="M"/>
+      <CacheStrategy val="N"/>
+      <ForceRecordSuffix val="N"/>
+      <TransactionMode val="P"/>
+      <TransactionBegin val="N"/>
+      <PreloadView val="N"/>
+      <AllowEmptyDataview val="N"/>
+      <KeepCreatedContext val="N"/>
+    </TaskProperties>
+    <SIDE_WIN>
+      <AllowOptions val="N"/>
+      <AllowQuery val="Y"/>
+      <AllowModify val="N"/>
+      <AllowCreate val="N"/>
+      <AllowDelete val="N"/>
+      <AllowLocate val="N"/>
+      <AllowRange val="N"/>
+      <AllowIndexChange val="N"/>
+      <AllowSorting val="N"/>
+      <AllowIOFiles val="N"/>
+      <RecordCycle val="Y"/>
+      <AllowEvents val="N"/>
+      <AllowIndexOptimization val="N"/>
+      <AllowLocationInQuery val="N"/>
+      <AllowPrintingData val="N"/>
+    </SIDE_WIN>
+    <WIN>
+      <OpenTaskWindow val="Y"/>
+      <CloseTaskWindow val="Y"/>
+      <ForegroundWindow val="Y"/>
+      <FlipFld val="N"/>
+      <RefreshTaskWindow ReturnValue="N"/>
+    </WIN>
+    <BOX>
+      <Direction val="V"/>
+    </BOX>
+  </Information>
+
+  <TaskLogic>
+    <LogicUnit propagate="78">
+      <Level val="R"/>
+      <Type val="M"/>
+      <Scope val="S"/>
+      <EngineDirective val="S"/>
+      <ShowMessage val="Y"/>
+      <Condition val="89"/>
+      <Event>
+        <EventType val="S"/>
+      </Event>
+    </LogicUnit>
+  </TaskLogic>
+
+  <TaskForms>
+    <FormEntry>
+      <PropertyList model="FORM_GUI0">
+        <X id="21"/>
+        <Y id="22"/>
+        <Width id="23" val="320"/>
+        <Height id="24" val="200"/>
+        <SystemMenu id="27" val="Y"/>
+        <MinimizeButton id="28" val="Y"/>
+        <MaximizeButton id="29" val="Y"/>
+        <FormUnits id="33" val="1"/>
+        <VerticalFactor id="34" val="8"/>
+        <HorizontalFactor id="35" val="4"/>
+        <_Comment id="218"/>
+        <FormName id="311" valUnicode="メインプログラム"/>
+        <WindowType id="358" val="11"/>
+        <StartupMode id="362" val="2"/>
+        <_PulldownMenu id="441"/>
+        <PersistentFormState id="493"/>
+        <AllowScaling id="731"/>
+      </PropertyList>
+    </FormEntry>
+  </TaskForms>
+
+</Task>
+<Task MainProgram="N">
+
+  <Header Description="Sample">
+    <ExecutionRight/>
+    <Resident val="N"/>
+    <SQL val="N"/>
+    <ReturnValue>
+      <ReturnValueAttr/>
+      <ParametersAttributes/>
+    </ReturnValue>
+    <SqlWhereExist val="N"/>
+    <TaskType val="C"/>
+    <Interactive val="Y"/>
+    <External val="N"/>
+    <Offline val="N"/>
+    <FormType val="N"/>
+    <DotNetObjectExists val="N"/>
+    <LastModified _date="738294" _time="48639" date="2022/05/19" time="13:30:39"/>
+  </Header>
+
+  <Resource>
+    <Columns>
+      <Column id="1" name="VA_KUBUN">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Range id="98" valUnicode="1:債権,2:債務"/>
+          <Picture id="157" valUnicode="1"/>
+          <StoredAs id="173" val="1"/>
+          <Size id="174" val="1"/>
+          <_Flip id="194"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Column>
+      <Column id="2" name="TB_Search">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="10"/>
+          <StoredAs id="173" val="1"/>
+          <Size id="174" val="10"/>
+          <_Flip id="194"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Column>
+    </Columns>
+  </Resource>
+
+  <Information>
+    <Key>
+      <Mode val="N"/>
+    </Key>
+    <DB/>
+    <Sort>
+      <CLS val="A"/>
+    </Sort>
+    <ForceRecordDelete DEL="N"/>
+    <EndTaskCondition val="N"/>
+    <EvaluateEndCondition val="B"/>
+    <InitialMode val="M"/>
+    <Locate Direction="A"/>
+    <Range Direction="A"/>
+    <TaskProperties>
+      <SelectionTable val="N"/>
+      <ConfirmUpdate CNFU="N"/>
+      <ConfirmCancel val="N"/>
+      <ErrorStrategy val="R"/>
+      <LockingStrategy val="M"/>
+      <CacheStrategy val="D"/>
+      <ForceRecordSuffix val="N"/>
+      <TransactionMode val="O"/>
+      <TransactionBegin val="N"/>
+      <PreloadView val="N"/>
+      <AllowEmptyDataview val="N"/>
+      <KeepCreatedContext val="N"/>
+    </TaskProperties>
+    <SIDE_WIN>
+      <AllowOptions val="N"/>
+      <AllowQuery val="Y"/>
+      <AllowModify val="Y"/>
+      <AllowCreate val="N"/>
+      <AllowDelete val="N"/>
+      <AllowLocate val="Y"/>
+      <AllowRange val="N"/>
+      <AllowIndexChange val="N"/>
+      <AllowSorting val="N"/>
+      <AllowIOFiles val="N"/>
+      <TabbingCycle val="R"/>
+      <AllowEvents val="Y"/>
+      <AllowIndexOptimization val="Y"/>
+      <AllowLocationInQuery val="N"/>
+      <AllowPrintingData val="N"/>
+    </SIDE_WIN>
+    <WIN>
+      <OpenTaskWindow val="Y"/>
+      <CloseTaskWindow val="Y"/>
+      <ForegroundWindow val="Y"/>
+      <FlipFld val="N"/>
+      <RefreshTaskWindow ReturnValue="N"/>
+    </WIN>
+    <BOX>
+      <Direction val="V"/>
+    </BOX>
+  </Information>
+
+  <TaskLogic>
+    <LogicUnit propagate="78">
+      <Level val="R"/>
+      <Type val="M"/>
+      <Scope val="S"/>
+      <EngineDirective val="S"/>
+      <ShowMessage val="Y"/>
+      <Condition val="89"/>
+      <_TotalVariabls val="2"/>
+      <_TotalVirtuals val="2"/>
+      <Event>
+        <EventType val="S"/>
+      </Event>
+      <ExecuteOn_ val="O"/>
+      <LogicLines>
+        <LogicLine>
+          <DATAVIEW_SRC Type="M">
+            <Condition val="N"/>
+            <Modifier val="B"/>
+            <Direction val="C"/>
+          </DATAVIEW_SRC>
+        </LogicLine>
+        <LogicLine>
+          <Select Name="A">
+            <ASS val="2"/>
+            <Column val="1"/>
+            <Type val="V"/>
+            <ExposedToRoute val="N"/>
+            <IsParameter val="N"/>
+            <_DitIndexForToolkit val="2"/>
+            <DIFF_UPDATE val="T"/>
+            <PartOfDataview val="Y"/>
+            <Condition val="Y"/>
+            <Modifier val="S"/>
+            <Direction val="C"/>
+          </Select>
+        </LogicLine>
+        <LogicLine>
+          <Select Name="B">
+            <ASS val="1"/>
+            <Column val="2"/>
+            <Type val="V"/>
+            <ExposedToRoute val="N"/>
+            <IsParameter val="N"/>
+            <_DitIndexForToolkit val="3"/>
+            <DIFF_UPDATE val="T"/>
+            <PartOfDataview val="Y"/>
+            <Condition val="Y"/>
+            <Modifier val="S"/>
+            <Direction val="C"/>
+          </Select>
+        </LogicLine>
+      </LogicLines>
+    </LogicUnit>
+    <LogicUnit propagate="78">
+      <Level val="H"/>
+      <Type val="U"/>
+      <Scope val="T"/>
+      <EngineDirective val="S"/>
+      <ShowMessage val="Y"/>
+      <Condition val="89"/>
+      <Event>
+        <EventType val="U"/>
+        <PublicObject comp="-1" obj="1"/>
+      </Event>
+      <TXT val="PB_Search"/>
+      <Expanded val="1"/>
+      <ExecuteOn_ val="O"/>
+      <LogicLines>
+        <LogicLine>
+          <BLOCK EndBlock="8" EndBlockSegment="6" Type="I">
+            <Expanded val="1"/>
+            <Condition Exp="3"/>
+            <Modifier val="B"/>
+            <Direction val="C"/>
+          </BLOCK>
+        </LogicLine>
+        <LogicLine>
+          <CallTask>
+            <OperationType val="P"/>
+            <Event>
+              <EventType val="N"/>
+            </Event>
+            <TaskID obj="4"/>
+            <Lock val="N"/>
+            <Wait val="Y"/>
+            <SyncData val="N"/>
+            <RetainFocus val="N"/>
+            <Condition val="Y"/>
+            <Modifier val="B"/>
+            <Direction val="C"/>
+          </CallTask>
+        </LogicLine>
+        <LogicLine>
+          <BLOCK EndBlock="8" EndBlockSegment="8" Type="E">
+            <Expanded val="1"/>
+            <Condition val="Y"/>
+            <Modifier val="B"/>
+            <Direction val="C"/>
+          </BLOCK>
+        </LogicLine>
+        <LogicLine>
+          <CallTask>
+            <OperationType val="P"/>
+            <Event>
+              <EventType val="N"/>
+            </Event>
+            <TaskID obj="4"/>
+            <Lock val="N"/>
+            <Wait val="Y"/>
+            <SyncData val="N"/>
+            <RetainFocus val="N"/>
+            <Condition val="Y"/>
+            <Modifier val="B"/>
+            <Direction val="C"/>
+          </CallTask>
+        </LogicLine>
+        <LogicLine>
+          <END_BLK/>
+        </LogicLine>
+      </LogicLines>
+    </LogicUnit>
+  </TaskLogic>
+
+  <TaskForms>
+    <FormEntry _last_test_id="221">
+      <PropertyList model="FORM_RICH_CLIENT">
+        <_Comment id="218"/>
+        <FormName id="311" valUnicode="Sample"/>
+        <_TabbingOrder id="318" val="1"/>
+        <WindowType id="358" val="2"/>
+      </PropertyList>
+      <Control _test_id="179">
+        <PropertyList model="CTRL_RICH_CLIENT_LABEL">
+          <Text id="19" valUnicode="KUBUN"/>
+          <X id="21" val="12"/>
+          <Y id="22" val="24"/>
+          <Width id="23" val="40"/>
+          <Height id="24" val="10"/>
+          <_Orientation id="143"/>
+        </PropertyList>
+      </Control>
+      <Control PDOD="192" _test_id="221">
+        <PropertyList model="CTRL_RICH_CLIENT_COMBOBOX">
+          <Model ID="MODEL_RICH_CLIENT" id="1">
+            <Var Column="1"/>
+          </Model>
+          <X id="21" val="55"/>
+          <Y id="22" val="23"/>
+          <Width id="23" val="64"/>
+          <Height id="24" val="17"/>
+          <Data Column="A" id="43"/>
+          <ItemsList id="45" valUnicode="1:AAA,2:BBB"/>
+          <TabOrder id="314" val="1"/>
+        </PropertyList>
+      </Control>
+      <Control PDOD="128" _test_id="82">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <X id="21" val="48"/>
+          <Y id="22" val="68"/>
+          <Width id="23" val="40"/>
+          <Height id="24" val="24"/>
+          <Data Column="B" id="43"/>
+          <ControlName id="46" val="PB_Search"/>
+          <Format Exp="1" id="82" valUnicode="Search"/>
+          <RaiseEvent id="234">
+            <EventType val="U"/>
+            <PublicObject comp="-1" obj="1"/>
+          </RaiseEvent>
+          <TabOrder id="314" val="2"/>
+        </PropertyList>
+      </Control>
+    </FormEntry>
+  </TaskForms>
+
+  <Expressions>
+    <Expression>
+      <ExpSyntax val="'Search'"/>
+      <ExpAttribute val="A"/>
+    </Expression>
+    <Expression>
+      <ExpSyntax val="'2'"/>
+      <ExpAttribute val="A"/>
+    </Expression>
+    <Expression>
+      <ExpSyntax val="A='1'"/>
+      <ExpAttribute val="B"/>
+    </Expression>
+  </Expressions>
+
+  <EVNT DESC="Click" FORCE_EXIT="C">
+    <Event>
+      <EventType val="N"/>
+    </Event>
+  </EVNT>
+
+</Task>
+<Task MainProgram="N">
+
+  <Header ISEMPTY_TSK="1">
+    <ExecutionRight/>
+    <Resident val="N"/>
+    <SQL val="N"/>
+    <ReturnValue>
+      <ReturnValueAttr/>
+      <ParametersAttributes/>
+    </ReturnValue>
+    <SqlWhereExist val="N"/>
+    <TaskType val="O"/>
+    <External val="N"/>
+    <Offline val="N"/>
+    <FormType val="N"/>
+    <DotNetObjectExists val="N"/>
+    <LastModified date="0000/00/00" time="00:00:00"/>
+  </Header>
+
+  <Resource>
+    <Columns/>
+  </Resource>
+
+  <Information>
+    <Key>
+      <Mode val="N"/>
+    </Key>
+    <DB/>
+    <Sort>
+      <CLS val="A"/>
+    </Sort>
+    <ForceRecordDelete DEL="N"/>
+    <EndTaskCondition val="N"/>
+    <EvaluateEndCondition val="B"/>
+    <InitialMode val="M"/>
+    <Locate Direction="A"/>
+    <Range Direction="A"/>
+    <TaskProperties>
+      <SelectionTable val="N"/>
+      <ConfirmUpdate CNFU="N"/>
+      <ConfirmCancel val="N"/>
+      <ErrorStrategy val="R"/>
+      <LockingStrategy val="M"/>
+      <CacheStrategy val="D"/>
+      <ForceRecordSuffix val="N"/>
+      <TransactionMode val="D"/>
+      <TransactionBegin val="P"/>
+      <PreloadView val="N"/>
+      <AllowEmptyDataview val="N"/>
+      <KeepCreatedContext val="N"/>
+    </TaskProperties>
+    <SIDE_WIN>
+      <AllowOptions val="Y"/>
+      <AllowQuery val="Y"/>
+      <AllowModify val="Y"/>
+      <AllowCreate val="Y"/>
+      <AllowDelete val="Y"/>
+      <AllowLocate val="Y"/>
+      <AllowRange val="Y"/>
+      <AllowIndexChange val="Y"/>
+      <AllowSorting val="Y"/>
+      <AllowIOFiles val="Y"/>
+      <RecordCycle val="Y"/>
+      <AllowEvents val="Y"/>
+      <AllowIndexOptimization val="Y"/>
+      <AllowLocationInQuery val="Y"/>
+      <AllowPrintingData val="N"/>
+    </SIDE_WIN>
+    <WIN>
+      <OpenTaskWindow val="Y"/>
+      <CloseTaskWindow val="Y"/>
+      <ForegroundWindow val="Y"/>
+      <FlipFld val="N"/>
+      <RefreshTaskWindow ReturnValue="N"/>
+    </WIN>
+    <BOX>
+      <Direction val="V"/>
+    </BOX>
+  </Information>
+
+  <TaskLogic>
+    <LogicUnit propagate="78">
+      <Level val="R"/>
+      <Type val="M"/>
+      <Scope val="S"/>
+      <EngineDirective val="S"/>
+      <ShowMessage val="Y"/>
+      <Condition val="89"/>
+      <Event>
+        <EventType val="S"/>
+      </Event>
+      <LogicLines>
+        <LogicLine>
+          <DATAVIEW_SRC Type="M">
+            <Condition val="N"/>
+            <Modifier val="B"/>
+            <Direction val="C"/>
+          </DATAVIEW_SRC>
+        </LogicLine>
+      </LogicLines>
+    </LogicUnit>
+  </TaskLogic>
+
+  <TaskForms>
+    <FormEntry>
+      <PropertyList model="FORM_GUI0">
+        <_Comment id="218"/>
+        <FormName id="311"/>
+      </PropertyList>
+    </FormEntry>
+  </TaskForms>
+
+</Task>
+<Task MainProgram="N">
+
+  <Header Description="Parent">
+    <ExecutionRight/>
+    <Resident val="N"/>
+    <SQL val="N"/>
+    <ReturnValue>
+      <ReturnValueAttr/>
+      <ParametersAttributes/>
+    </ReturnValue>
+    <SqlWhereExist val="N"/>
+    <TaskType val="C"/>
+    <Interactive val="Y"/>
+    <External val="N"/>
+    <Offline val="N"/>
+    <FormType val="N"/>
+    <DotNetObjectExists val="N"/>
+    <LastModified _date="738294" _time="47218" date="2022/05/19" time="13:06:58"/>
+  </Header>
+
+  <Resource>
+    <Columns>
+      <Column id="1" name="VA_Serch">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <StoredAs id="173" val="1"/>
+          <Size id="174" val="1"/>
+          <_Flip id="194"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Column>
+    </Columns>
+  </Resource>
+
+  <Information>
+    <Key>
+      <Mode val="N"/>
+    </Key>
+    <DB/>
+    <Sort>
+      <CLS val="A"/>
+    </Sort>
+    <ForceRecordDelete DEL="N"/>
+    <EndTaskCondition val="N"/>
+    <EvaluateEndCondition val="B"/>
+    <InitialMode val="M"/>
+    <Locate Direction="A"/>
+    <Range Direction="A"/>
+    <TaskProperties>
+      <SelectionTable val="N"/>
+      <ConfirmUpdate CNFU="N"/>
+      <ConfirmCancel val="N"/>
+      <ErrorStrategy val="A"/>
+      <LockingStrategy val="M"/>
+      <CacheStrategy val="D"/>
+      <ForceRecordSuffix val="N"/>
+      <TransactionMode val="O"/>
+      <TransactionBegin val="N"/>
+      <PreloadView val="N"/>
+      <AllowEmptyDataview val="N"/>
+      <KeepCreatedContext val="N"/>
+    </TaskProperties>
+    <SIDE_WIN>
+      <AllowOptions val="N"/>
+      <AllowQuery val="Y"/>
+      <AllowModify val="Y"/>
+      <AllowCreate val="N"/>
+      <AllowDelete val="N"/>
+      <AllowLocate val="N"/>
+      <AllowRange val="N"/>
+      <AllowIndexChange val="N"/>
+      <AllowSorting val="N"/>
+      <AllowIOFiles val="N"/>
+      <TabbingCycle val="R"/>
+      <AllowEvents val="Y"/>
+      <AllowIndexOptimization val="Y"/>
+      <AllowLocationInQuery val="N"/>
+      <AllowPrintingData val="N"/>
+    </SIDE_WIN>
+    <WIN>
+      <OpenTaskWindow val="Y"/>
+      <CloseTaskWindow val="Y"/>
+      <ForegroundWindow val="Y"/>
+      <FlipFld val="N"/>
+      <RefreshTaskWindow ReturnValue="N"/>
+    </WIN>
+    <BOX>
+      <Direction val="V"/>
+    </BOX>
+  </Information>
+
+  <TaskLogic>
+    <LogicUnit propagate="78">
+      <Level val="R"/>
+      <Type val="M"/>
+      <Scope val="S"/>
+      <EngineDirective val="S"/>
+      <ShowMessage val="Y"/>
+      <Condition val="89"/>
+      <_TotalVariabls val="1"/>
+      <_TotalVirtuals val="1"/>
+      <Event>
+        <EventType val="S"/>
+      </Event>
+      <ExecuteOn_ val="O"/>
+      <LogicLines>
+        <LogicLine>
+          <DATAVIEW_SRC Type="M">
+            <Condition val="N"/>
+            <Modifier val="B"/>
+            <Direction val="C"/>
+          </DATAVIEW_SRC>
+        </LogicLine>
+        <LogicLine>
+          <Select Name="A">
+            <Column val="1"/>
+            <Type val="V"/>
+            <ExposedToRoute val="N"/>
+            <IsParameter val="N"/>
+            <_DitIndexForToolkit val="2"/>
+            <DIFF_UPDATE val="T"/>
+            <PartOfDataview val="Y"/>
+            <Condition val="Y"/>
+            <Modifier val="S"/>
+            <Direction val="C"/>
+          </Select>
+        </LogicLine>
+      </LogicLines>
+    </LogicUnit>
+  </TaskLogic>
+
+  <TaskForms>
+    <FormEntry _last_test_id="248">
+      <PropertyList model="FORM_RICH_CLIENT">
+        <_Comment id="218"/>
+        <FormName id="311" valUnicode="Parent"/>
+        <WindowType id="358" val="2"/>
+      </PropertyList>
+      <Control _test_id="248">
+        <PropertyList model="CTRL_RICH_CLIENT_LABEL">
+          <Text id="19" valUnicode="VA_Serch"/>
+          <X id="21" val="38"/>
+          <Y id="22" val="30"/>
+          <Width id="23" val="33"/>
+          <Height id="24" val="9"/>
+          <Font id="50" val="1"/>
+          <Style id="63" val="7"/>
+          <_Orientation id="143"/>
+        </PropertyList>
+      </Control>
+      <Control _test_id="247">
+        <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+          <Model ID="MODEL_RICH_CLIENT" id="1">
+            <Var Column="1"/>
+          </Model>
+          <X id="21" val="75"/>
+          <Y id="22" val="30"/>
+          <Width id="23" val="8"/>
+          <Height id="24" val="13"/>
+          <Data Column="A" id="43"/>
+          <ControlName id="46" val="VA_Serch"/>
+          <TabOrder id="314" val="1"/>
+        </PropertyList>
+      </Control>
+      <Control PDOD="128" _test_id="154">
+        <PropertyList model="CTRL_RICH_CLIENT_SUBFORM">
+          <X id="21" val="87"/>
+          <Y id="22" val="143"/>
+          <Width id="23" val="124"/>
+          <Height id="24" val="28"/>
+          <ControlName id="46" val="SubForm"/>
+          <Arguments id="126">
+            <Arguments>
+              <Argument>
+                <Expression val="1"/>
+                <Skip val="N"/>
+              </Argument>
+            </Arguments>
+          </Arguments>
+          <TaskNumber id="183" obj="5"/>
+          <TabOrder id="314" val="2"/>
+        </PropertyList>
+      </Control>
+    </FormEntry>
+  </TaskForms>
+
+  <Expressions>
+    <Expression>
+      <ExpSyntax val="'終了'"/>
+      <ExpAttribute val="A"/>
+    </Expression>
+  </Expressions>
+
+</Task>
+<Task MainProgram="N">
+
+  <Header Description="SubForm">
+    <ExecutionRight/>
+    <Resident val="N"/>
+    <SQL val="N"/>
+    <ReturnValue>
+      <ReturnValueAttr/>
+      <ParametersAttributes/>
+    </ReturnValue>
+    <SqlWhereExist val="N"/>
+    <TaskType val="C"/>
+    <Interactive val="Y"/>
+    <External val="N"/>
+    <Offline val="N"/>
+    <FormType val="M"/>
+    <DotNetObjectExists val="N"/>
+    <LastModified _date="738294" _time="47147" date="2022/05/19" time="13:05:47"/>
+  </Header>
+
+  <Resource>
+    <Columns>
+      <Column id="1" name="G_F12">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="9"/>
+          <StoredAs id="173" val="1"/>
+          <Size id="174" val="9"/>
+          <_Flip id="194"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Column>
+    </Columns>
+  </Resource>
+
+  <Information>
+    <Key>
+      <Mode val="N"/>
+    </Key>
+    <DB/>
+    <Sort>
+      <CLS val="A"/>
+    </Sort>
+    <ForceRecordDelete DEL="N"/>
+    <EndTaskCondition val="N"/>
+    <EvaluateEndCondition val="B"/>
+    <InitialMode val="E"/>
+    <Locate Direction="A"/>
+    <Range Direction="A"/>
+    <TaskProperties>
+      <SelectionTable val="N"/>
+      <ConfirmUpdate CNFU="N"/>
+      <ConfirmCancel val="N"/>
+      <ErrorStrategy val="A"/>
+      <LockingStrategy val="M"/>
+      <CacheStrategy val="D"/>
+      <ForceRecordSuffix val="N"/>
+      <TransactionMode val="O"/>
+      <TransactionBegin val="N"/>
+      <PreloadView val="N"/>
+      <AllowEmptyDataview val="N"/>
+      <KeepCreatedContext val="N"/>
+    </TaskProperties>
+    <SIDE_WIN>
+      <AllowOptions val="N"/>
+      <AllowQuery val="Y"/>
+      <AllowModify val="N"/>
+      <AllowCreate val="Y"/>
+      <AllowDelete val="N"/>
+      <AllowLocate val="N"/>
+      <AllowRange val="N"/>
+      <AllowIndexChange val="N"/>
+      <AllowSorting val="N"/>
+      <AllowIOFiles val="N"/>
+      <TabbingCycle val="N"/>
+      <AllowEvents val="Y"/>
+      <AllowIndexOptimization val="Y"/>
+      <AllowLocationInQuery val="N"/>
+      <AllowPrintingData val="N"/>
+    </SIDE_WIN>
+    <WIN>
+      <OpenTaskWindow val="Y"/>
+      <CloseTaskWindow val="Y"/>
+      <ForegroundWindow val="Y"/>
+      <FlipFld val="N"/>
+      <RefreshTaskWindow ReturnValue="N"/>
+    </WIN>
+    <BOX>
+      <Direction val="V"/>
+    </BOX>
+  </Information>
+
+  <TaskLogic>
+    <LogicUnit propagate="78">
+      <Level val="R"/>
+      <Type val="M"/>
+      <Scope val="S"/>
+      <EngineDirective val="S"/>
+      <ShowMessage val="Y"/>
+      <Condition val="89"/>
+      <_TotalVariabls val="1"/>
+      <_TotalVirtuals val="1"/>
+      <Event>
+        <EventType val="S"/>
+      </Event>
+      <ExecuteOn_ val="O"/>
+      <LogicLines>
+        <LogicLine>
+          <DATAVIEW_SRC Type="M">
+            <Condition val="N"/>
+            <Modifier val="B"/>
+            <Direction val="C"/>
+          </DATAVIEW_SRC>
+        </LogicLine>
+        <LogicLine>
+          <Select Name="A">
+            <Column val="1"/>
+            <Type val="V"/>
+            <ExposedToRoute val="N"/>
+            <IsParameter val="N"/>
+            <DIFF_UPDATE val="T"/>
+            <Condition val="Y"/>
+            <Modifier val="S"/>
+            <Direction val="C"/>
+          </Select>
+        </LogicLine>
+      </LogicLines>
+    </LogicUnit>
+  </TaskLogic>
+
+  <TaskForms>
+    <FormEntry _last_test_id="26">
+      <PropertyList model="FORM_RICH_CLIENT">
+        <Width id="23" val="80"/>
+        <Height id="24" val="30"/>
+        <TitleBar id="26"/>
+        <SystemMenu id="27"/>
+        <_Comment id="218"/>
+        <FormName id="311" valUnicode="SubForm"/>
+      </PropertyList>
+    </FormEntry>
+  </TaskForms>
+
+</Task>
+</Programs>
+</ProgramsRepository>
+
+<MenusRepository>
+
+  <Menus>
+    <Menu>
+      <MenuType val="4"/>
+      <ToolNumber val="1"/>
+      <Name val="ﾃﾞﾌｫﾙﾄﾌﾟﾙﾀﾞｳﾝﾒﾆｭｰ"/>
+      <MenuEntry>
+        <MenuType val="1"/>
+        <Description_U val="ﾌｧｲﾙ(&amp;F)"/>
+        <Right/>
+        <Help/>
+        <Prompt/>
+        <Menu>
+          <MenuType val="1"/>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1088"/>
+            <Description_U val="ｱﾌﾟﾘｹｰｼｮﾝ･ｵｰﾌﾟﾝ(&amp;O)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="23"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="1"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1088"/>
+            <Description_U val="ｱﾌﾟﾘｹｰｼｮﾝ･ｸﾛｰｽﾞ(&amp;C)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="24"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="21"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="5"/>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1024"/>
+            <Description_U val="ﾌﾟﾘﾝﾀの設定(&amp;S)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="162"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="153"/>
+              <ToolGroup val="999"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="5"/>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Description_U val="終了(&amp;X)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="28"/>
+            </Event>
+          </MenuEntry>
+        </Menu>
+      </MenuEntry>
+      <MenuEntry>
+        <MenuType val="1"/>
+        <Description_U val="編集(&amp;E)"/>
+        <Right/>
+        <Help/>
+        <Prompt/>
+        <Menu>
+          <MenuType val="1"/>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Description_U val="ｷｬﾝｾﾙ(&amp;A)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="33"/>
+            </Event>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1024"/>
+            <Description_U val="変更取消(&amp;U)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="180"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="115"/>
+              <ToolGroup val="999"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="5"/>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1024"/>
+            <Description_U val="切り取り(&amp;T)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="11"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="78"/>
+              <ToolGroup val="999"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1024"/>
+            <Description_U val="ｺﾋﾟｰ(&amp;C)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="239"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="79"/>
+              <ToolGroup val="999"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1024"/>
+            <Description_U val="貼り付け(&amp;P)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="240"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="80"/>
+              <ToolGroup val="999"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="5"/>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1024"/>
+            <Description_U val="行作成(&amp;R)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="37"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="195"/>
+              <ToolGroup val="999"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Description_U val="Create &amp;Line Above"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="634"/>
+            </Event>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1024"/>
+            <Description_U val="行削除(&amp;D)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="36"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="196"/>
+              <ToolGroup val="999"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1024"/>
+            <Description_U val="すべて選択(&amp;E)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="286"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="194"/>
+              <ToolGroup val="999"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="5"/>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1024"/>
+            <Description_U val="ｽﾞｰﾑ(&amp;Z)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="34"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="199"/>
+              <ToolGroup val="999"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1024"/>
+            <Description_U val="広域表示(&amp;W)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="35"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="198"/>
+              <ToolGroup val="999"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="5"/>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1024"/>
+            <Description_U val="複写(&amp;I)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="77"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="197"/>
+              <ToolGroup val="999"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1024"/>
+            <Description_U val="NULLに設定(&amp;S)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="209"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="200"/>
+              <ToolGroup val="999"/>
+            </Tool>
+          </MenuEntry>
+        </Menu>
+      </MenuEntry>
+      <MenuEntry>
+        <MenuType val="1"/>
+        <Description_U val="ｵﾌﾟｼｮﾝ(&amp;O)"/>
+        <Right/>
+        <Help/>
+        <Prompt/>
+        <Menu>
+          <MenuType val="1"/>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1088"/>
+            <Description_U val="修正(&amp;M)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="30"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="23"/>
+              <ToolGroup val="1"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1088"/>
+            <Description_U val="登録(&amp;C)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="31"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="24"/>
+              <ToolGroup val="1"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1088"/>
+            <Description_U val="照会(&amp;Q)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="32"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="25"/>
+              <ToolGroup val="1"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="5"/>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1088"/>
+            <Description_U val="位置付(&amp;L)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="122"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="26"/>
+              <ToolGroup val="2"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1088"/>
+            <Description_U val="位置付／次候補(&amp;N)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="165"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="27"/>
+              <ToolGroup val="2"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1088"/>
+            <Description_U val="範囲(&amp;R)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="123"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="28"/>
+              <ToolGroup val="2"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1088"/>
+            <Description_U val="ｲﾝﾃﾞｯｸｽ(&amp;V)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="124"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="29"/>
+              <ToolGroup val="2"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1088"/>
+            <Description_U val="ｿｰﾄ(&amp;T)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="125"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="30"/>
+              <ToolGroup val="2"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1024"/>
+            <Description_U val="ﾃﾞｰﾀ出力(&amp;P)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="160"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="193"/>
+              <ToolGroup val="999"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="5"/>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1088"/>
+            <Description_U val="ﾃｰﾌﾞﾙ先頭"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="72"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="32"/>
+              <ToolGroup val="4"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1088"/>
+            <Description_U val="前画面"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="66"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="34"/>
+              <ToolGroup val="4"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1088"/>
+            <Description_U val="前行"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="64"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="36"/>
+              <ToolGroup val="4"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1088"/>
+            <Description_U val="次行"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="65"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="37"/>
+              <ToolGroup val="4"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1088"/>
+            <Description_U val="次画面"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="67"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="35"/>
+              <ToolGroup val="4"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1088"/>
+            <Description_U val="ﾃｰﾌﾞﾙ末尾"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="73"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="33"/>
+              <ToolGroup val="4"/>
+            </Tool>
+          </MenuEntry>
+        </Menu>
+      </MenuEntry>
+      <MenuEntry>
+        <MenuType val="1"/>
+        <Description_U val="ｳｨﾝﾄﾞｳ(&amp;W)"/>
+        <Right/>
+        <Help/>
+        <Prompt/>
+        <Menu>
+          <MenuType val="1"/>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1024"/>
+            <Description_U val="全て閉じる(&amp;A)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="370"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="208"/>
+              <ToolGroup val="999"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="5"/>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1024"/>
+            <Description_U val="次のｳｨﾝﾄﾞｳ(&amp;N)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="462"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="206"/>
+              <ToolGroup val="999"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="3"/>
+            <Flags val="1024"/>
+            <Description_U val="前のｳｨﾝﾄﾞｳ(&amp;P)"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="463"/>
+            </Event>
+            <Tool>
+              <ToolNumber val="205"/>
+              <ToolGroup val="999"/>
+            </Tool>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="5"/>
+          </MenuEntry>
+          <MenuEntry>
+            <MenuType val="7"/>
+            <Right/>
+            <Help/>
+            <Prompt/>
+          </MenuEntry>
+        </Menu>
+      </MenuEntry>
+    </Menu>
+  </Menus>
+
+</MenusRepository>
+<ProjectProperties>
+
+  <ProjectData>
+    <GUID val="{11710322-4E4B-42D9-98E1-7981B36966F0}"/>
+    <RemoteFlowMonitorRight/>
+    <Programs/>
+    <NulArithmetic val="N"/>
+    <WindowSortBy val="R"/>
+    <_SystemPulldownMenu/>
+    <_SystemContextMenu/>
+    <ExposeComment val="N"/>
+    <ProjectName val="Test20220518a"/>
+  </ProjectData>
+
+</ProjectProperties>
+</Application>
