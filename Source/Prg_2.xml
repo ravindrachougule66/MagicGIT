@@ -27,9 +27,9 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738322" _time="57822" date="16/06/2022" time="16:03:42"/>
+          <LastModified _date="738347" _time="61396" date="11/07/2022" time="17:03:16"/>
         </Header>
-        <ItemIsn val="8"/>
+        <ItemIsn val="9"/>
         <Resource>
           <Columns>
             <Column id="1" name="a">
@@ -60,6 +60,15 @@
               </PropertyList>
             </Column>
             <Column id="4" name="d">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="10"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="10"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="5" name="f">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
                 <Picture id="157" valUnicode="10"/>
@@ -198,6 +207,18 @@
                   <Direction val="C"/>
                 </Select>
               </LogicLine>
+              <LogicLine>
+                <Select FieldID="9" FlowIsn="7" id="9">
+                  <Column val="5"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
             </LogicLines>
           </LogicUnit>
         </TaskLogic>
@@ -329,7 +350,6 @@
             </Control>
             <Control PDOD="128" _test_id="11" id="11">
               <PropertyList model="CTRL_GUI0_EDIT">
-                <Model id="1"/>
                 <X id="21" val="17"/>
                 <Y id="22" val="80"/>
                 <Width id="23" val="56"/>
@@ -354,7 +374,6 @@
             </Control>
             <Control PDOD="128" _test_id="12" id="12">
               <PropertyList model="CTRL_GUI0_EDIT">
-                <Model id="1"/>
                 <X id="21" val="17"/>
                 <Y id="22" val="98"/>
                 <Width id="23" val="56"/>
@@ -379,7 +398,6 @@
             </Control>
             <Control PDOD="128" _test_id="13" id="13">
               <PropertyList model="CTRL_GUI0_EDIT">
-                <Model id="1"/>
                 <X id="21" val="17"/>
                 <Y id="22" val="116"/>
                 <Width id="23" val="56"/>
@@ -404,7 +422,6 @@
             </Control>
             <Control PDOD="128" _test_id="14" id="14">
               <PropertyList model="CTRL_GUI0_EDIT">
-                <Model id="1"/>
                 <X id="21" val="17"/>
                 <Y id="22" val="134"/>
                 <Width id="23" val="56"/>
